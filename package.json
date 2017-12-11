@@ -13,7 +13,7 @@
   ],
   "version": "0.1.0",
   "homepage": "http://github.com/ptvoinfo/pimatic-check-alive",
-  "repository": {
+  "_repository": {
     "type": "git",
     "url": "git://github.com/ptvoinfo/pimatic-check-alive.git"
   },
