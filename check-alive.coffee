@@ -214,7 +214,7 @@ module.exports = (env) ->
 
     _varStateChange: (item, state) =>
       @env.logger.debug("Changing variable alert state '#{item.name}': #{item.state} -> #{state}")
-      console.log("Changing variable alert state '#{item.name}': #{item.state} -> #{state}", item)
+      # console.log("Changing variable alert state '#{item.name}': #{item.state} -> #{state}", item)
       if state is STATE_HIGH_LOW
         item.state = STATE_LOW
         item.triggertime = undefined
@@ -231,9 +231,9 @@ module.exports = (env) ->
       if item.alert_attr
         oldState = @_alertStateForAttr[item.alert_attr]        
         @_alertStateForAttr[item.alert_attr] = @_getAlertStateForAttr(item.alert_attr)
-        console.log('Set alert attr ' + item.alert_attr + ' to ' + @_alertStateForAttr[item.alert_attr])
+        # console.log('Set alert attr ' + item.alert_attr + ' to ' + @_alertStateForAttr[item.alert_attr])
         if oldState isnt @_alertStateForAttr[item.alert_attr]
-          console.log('Emit alert attr ' + item.alert_attr)
+          # console.log('Emit alert attr ' + item.alert_attr)
           @emit item.alert_attr, @_alertStateForAttr[item.alert_attr]
 
     _checkAliveVars: (name, varobj, value) =>
