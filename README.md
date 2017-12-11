@@ -1,4 +1,4 @@
-#Pimatic "Check Alive" plugin
+# Pimatic "Check Alive" plugin
 =======================
 
 This plugin can control many variables in one place without long list of built-in rules. If a variable was not updated in the specified time interval the plugin sets the "state" attribute to "true". It allows you to control activity of remote devices that must send data periodically. You may just control changing of the "state" attribute in your rule and execute necessary actions. The plugin can also log alerts to a log file.
@@ -10,7 +10,7 @@ send sms "Alert for $test-check-alive.trigger"
 
 Bonus: you may control numeric variables that should match a some criteria. For example, check a value is in the specified range.
 
-##Config in the "plugins" section:
+## Config in the "plugins" section:
 -------
 
 ```json
@@ -20,7 +20,7 @@ Bonus: you may control numeric variables that should match a some criteria. For 
 }
 ```
 
-##Config in the "devices" section:
+## Config in the "devices" section:
 -------
 ```json
 {
