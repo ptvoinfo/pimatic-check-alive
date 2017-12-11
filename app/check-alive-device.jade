@@ -1,0 +1,12 @@
+script#check-alive-device-template(type='text/template')
+  li.sortable.switch-device.no-header
+    label.device-label(data-bind="text: name, tooltip: $data.labelTooltipHtml")
+    | 
+    select.switch(
+      data-bind="attr: { id: switchId }, value: switchState")
+      option(value="off")=__('Off')
+      option(value="on")=__('On')
+    | 
+    span.error(data-bind="text: ($data.error() ? $data.error() : '') ")
+    | 
+    span.attributes(data-bind="template: { name: 'switch-attribute-template', foreach: $data.device.attributes, afterRender: $data.afterAttributeRender }")

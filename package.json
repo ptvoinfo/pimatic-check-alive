@@ -1,0 +1,51 @@
+{
+  "name": "pimatic-check-alive",
+  "description": "Provides presence sensors for your remote devices that send data periodically, so actions can be triggered if a device was gone.",
+  "author": "Arthur Grasin (http://ptvo.info)",
+  "main": "check-alive.coffee",
+  "files": [
+    "app",
+    "check-alive.coffee",
+    "device-config-schema.coffee",
+    "check-alive-config-schema.coffee",
+    "README.md",
+    "LICENSE"
+  ],
+  "version": "0.1.0",
+  "homepage": "http://github.com/ptvoinfo/pimatic-check-alive",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ptvoinfo/pimatic-check-alive.git"
+  },
+  "license": "GPL-2.0",
+  "configSchema": "check-alive-config-schema.coffee",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "blanket": "^1.2.3",
+    "bluebird": "^3.4.6",
+    "cassert": "^0.1.2",
+    "coffee-errors": "^0.8.6",
+    "coffee-script": "^1.12.2",
+    "decl-api": "0.0.22",
+    "lodash": "^4.17.2"
+  },
+  "peerDependencies": {
+    "pimatic": "0.8.*"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": ">1.1.x"
+  },
+  "keywords": [
+    "pimatic",
+    "plugin",
+    "devices",
+    "alert",
+    "keep alive",
+    "update timeout",
+    "watchdog",
+    "variable udpate",
+    "check range"
+  ]
+}
