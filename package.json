@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git://github.com/ptvoinfo/pimatic-check-alive.git"
   },
-  "license": "GPL-2.0",
+  "license": "MIT",
   "configSchema": "check-alive-config-schema.coffee",
   "dependencies": {
   },
@@ -31,7 +31,7 @@
     "lodash": "^4.17.2"
   },
   "peerDependencies": {
-    "pimatic": "0.8.*"
+    "pimatic": ">=0.8.0 <1.0.0"
   },
   "engines": {
     "node": ">0.8.x",
